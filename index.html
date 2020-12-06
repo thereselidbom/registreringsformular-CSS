@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Mitt registreringsformulär</title>
+</head>
+<body>
+
+  <form action="/action_page.php">
+    <div class="container">
+        <div class="content d-flex">
+      <h1>Mitt registreringsformulär</h1> </div>
+      <p class="personal">Personliga uppgifter</p>
+       
+
+      <label for="fname">Förnamn</label><br>
+    <input type="text" id="fname" name="firstname" placeholder="Förnamn">
+   <label for="lname">Efternamn</label>
+    <input type="text" id="lname" name="lastname" placeholder="Efternamn">
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Email" name="email" id="email" required>
+  
+      <label for="psw">Lösenord</label>
+      <input type="password" placeholder="Lösenord" name="psw" id="psw" required>
+  
+      <label for="psw-repeat"><b>Repetera Lösenord</b></label>
+      <input type="password" placeholder="Repetera Lösenord" name="psw-repeat" id="psw-repeat" required>
+      <hr>
+
+      <div class="container">
+        <p class="fakturering"> Postadress </p>
+      </div>
+      
+      <div class="form">
+        <div class="">
+            <label for="postaladdress"><strong>Postadress</strong></label>
+            <input type="text" placeholder="Postadress" class="form-control" id="postaladdress" required>
+        </div>
+        <div class="col-md-3 mb-3">
+            <label for="postalcode"><strong>Postnummer</strong></label>
+            <input type="text" placeholder="Postnummer" class="form-control" id="postalcode" required>
+            
+        </div>
+        <div class="col-md-3 mb-3">
+            <label for="postalcity"><strong>Ort</strong></label>
+            <input type="text" placeholder="Ort" class="form-control" id="postalcity" required> 
+        </div>
+    </div>
+
+    <div class="container">
+      <p class="fakturering"> Leverensadress </p>
+    </div>
+    
+    <div class="form-row mt-4">
+      <div class="col-md-6 mb-3">
+          <label for="postaladdress"><strong>Leverensadress</strong></label>
+          <input type="text" placeholder="Leverensadress" class="form-control" id="postaladdress" required>
+      </div>
+      <div class="col-md-3 mb-3">
+          <label for="postalcode"><strong>Postnummer</strong></label>
+          <input type="text" placeholder="Postnummer" class="form-control" id="postalcode" required>
+      </div>
+      <div class="col-md-3 mb-3">
+          <label for="postalcity"><strong>Ort</strong></label>
+          <input type="text" placeholder="Ort" class="form-control" id="postalcity" required>
+      </div>
+  </div>
+
+      <input type="checkbox" id="checkbox1" name="checkbox1" value="gdpr">
+  <label for="checkbox1"> Jag har läst och accepterar <a href="#">GDPR och användarvillkoren</a></label><br>
+  <input type="checkbox" id="checkbox2" name="checkbox2" value="personuppgifter">
+  <label for="checkbox2">Jag ger min tillåtelse att EC Utbildning hanterar mina personuppgifter.</label><br>
+  <input type="checkbox" id="checkbox3" name="checkbox3" value="merch">
+  <label for="checkbox3">Jag vill ta del av nyhetsbrev och reklamerbjudanden.</label>
+
+  <bR>
+      <button type="submit" class="registerbtn">Register</button>
+    </div>
+  </form>
+
+
+
+</body>
+</html>
